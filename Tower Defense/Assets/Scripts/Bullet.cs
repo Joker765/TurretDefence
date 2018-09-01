@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour {
             Die();
             return;
         }
-        transform.LookAt(target.position,new Vector3(0,0,1));
+        transform.LookAt(target.position);
         transform.Translate(Vector3.forward * speed * Time.deltaTime); //局部坐标系，直接前方
     }
 
