@@ -8,11 +8,9 @@ public class Bullet : MonoBehaviour {
     public float speed = 20;
     public GameObject explosionEffectPrefab;
     private Transform target;
-    private bool isSetTarget=false;
 
     public void SetTarget(Transform _target)
     {
-      //  isSetTarget = true;
         this.target = _target;
     }
 
@@ -25,16 +23,13 @@ public class Bullet : MonoBehaviour {
         }
         transform.LookAt(target.position);
         transform.Translate(Vector3.forward * speed * Time.deltaTime); //局部坐标系，直接前方
-
     }
 
     private void OnTriggerEnter(Collider other)
     { 
-      //  print(other.tag);
         if (other.tag == "Enemy")
         {
             other.GetComponent<Enemy>().TakeDamage(damage);
-            print("MM");
             Die();
         }
     }

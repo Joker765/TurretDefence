@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 40
   speed: 30
-  explosionEffectPrefab: {fileID: 1745446163986386, guid: d856ff8c77463ae448cbb6351d31bbfb,
+  explosionEffectPrefab: {fileID: 1745446163986386, guid: bbee328ae3e749843a8888ca2de7278b,
     type: 2}
 --- !u!136 &136906553732838016
 CapsuleCollider:
