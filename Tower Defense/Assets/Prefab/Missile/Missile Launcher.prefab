@@ -256,8 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0c15bcc95acc241b57fd9c496d2096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0.8
-  weaponPrefab: {fileID: 1730769725789698, guid: ca24271d1de22bf4885c64e2f878efbd,
+  attackRate: 0.75
+  weaponPrefab: {fileID: 1724063586244180, guid: ca24271d1de22bf4885c64e2f878efbd,
     type: 2}
   firePosition: {fileID: 4964213236331398}
   head: {fileID: 4748682510067514}

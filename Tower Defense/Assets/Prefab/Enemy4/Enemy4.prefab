@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d82ae0f6c5887f34f8704f2bc33b890d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 160
+  hp: 220
   explosionEffect: {fileID: 1745446163986386, guid: 77a4f0afa3963d2419026dca9fd15891,
     type: 2}
   speed: 25

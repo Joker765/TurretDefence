@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d82ae0f6c5887f34f8704f2bc33b890d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 140
+  hp: 180
   explosionEffect: {fileID: 1745446163986386, guid: 75b0cca45e9239b4db84eedbf16d781f,
     type: 2}
   speed: 20
