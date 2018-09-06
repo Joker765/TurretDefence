@@ -2138,7 +2138,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 466644704}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1766390983}
+        m_MethodName: OnMenuDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &466644704
@@ -2569,7 +2580,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 529030613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1766390983}
+        m_MethodName: OnReplayDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &529030613
@@ -8177,10 +8199,10 @@ MonoBehaviour:
   laserTurretData:
     turretPrefab: {fileID: 1942696311560460, guid: 2fd596f9709a8be49a01ab7b845b52a6,
       type: 2}
-    cost: 200
+    cost: 180
     turretUpdatePrefab: {fileID: 1787633181613622, guid: c0669f1bbaafacc408d332b12d212f2b,
       type: 2}
-    upgradeCost: 120
+    upgradeCost: 50
     type: 0
   missileTurretData:
     turretPrefab: {fileID: 1715708175859266, guid: c7f43c404a8c4234aa29d95bd3a260de,
@@ -8188,7 +8210,7 @@ MonoBehaviour:
     cost: 150
     turretUpdatePrefab: {fileID: 1528565637816894, guid: 22d942bb1d8ab284ebbf2247b77ad5d0,
       type: 2}
-    upgradeCost: 100
+    upgradeCost: 80
     type: 1
   standardTurretData:
     turretPrefab: {fileID: 1348923001624596, guid: aa1d1c88e04517c4b9fdee76d1a4e95b,
@@ -8196,7 +8218,7 @@ MonoBehaviour:
     cost: 100
     turretUpdatePrefab: {fileID: 1526850420471494, guid: d0409efbef6fc2341bf9f1b5015cba88,
       type: 2}
-    upgradeCost: 60
+    upgradeCost: 50
     type: 2
   upgradeCanvas: {fileID: 1573619360}
   upgradeButton: {fileID: 1265636106}
@@ -9535,7 +9557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uFFE5200"
+  m_Text: "\uFFE5180"
 --- !u!222 &2034166568
 CanvasRenderer:
   m_ObjectHideFlags: 0

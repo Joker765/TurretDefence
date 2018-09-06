@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -31,4 +32,13 @@ public class GameManager : MonoBehaviour {
         endMessage.text = "Game Over";
     }
 
+    public void OnReplayDown()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void OnMenuDown()
+    {
+
+    }
 }

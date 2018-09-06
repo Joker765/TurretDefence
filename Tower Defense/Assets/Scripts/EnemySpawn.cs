@@ -37,7 +37,7 @@ public class EnemySpawn : MonoBehaviour {
        
             yield return new WaitForSeconds(waveRate);
         }
+        if (frontEnemy <= 0) GameManager.Instance.Win();
     }
-
 
 }
