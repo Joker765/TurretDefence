@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
-    public int hp=100;
+    public float hp=100;
     public GameObject explosionEffect;
     public float speed=10;
 
-    private int maxHp;
+    private float maxHp;
     private Slider hpSlider;
     private Transform[] pos;
     private int i=0;
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour {
         EnemySpawn.frontEnemy--;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (hp <= 0) return;
         hp -= damage;

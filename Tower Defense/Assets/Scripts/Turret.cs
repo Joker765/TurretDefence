@@ -26,27 +26,44 @@ public class Turret : MonoBehaviour {
 
     public float attackRate = 0.5f;
     private float timer=0.5f;
+    private int laserDamage = 50;
 
+    public GameObject laserEffect;
     public GameObject weaponPrefab;
     public Transform firePosition;
     public Transform head;
+    public bool Laser=false;
+    public LineRenderer laserRenderer;
 
     private void Update()
     {
+        laserRenderer.enabled = false;
+        laserEffect.SetActive(false);
         timer += Time.deltaTime;
-       // print(enemys.Count);
         
         if (enemys.Count > 0 && enemys[0] == null) UpdateList();
         if (enemys.Count <= 0) { timer = attackRate; return; }
 
-            Vector3 targetPos = enemys[0].transform.position;
-            targetPos.y = head.position.y;
-            head.LookAt(targetPos);
+        Vector3 targetPos = enemys[0].transform.position;
+        targetPos.y = head.position.y;
+        head.LookAt(targetPos);
+        if (!Laser)
+        {
             if (timer > attackRate)
             {
                 timer = 0;
-                Attack();
+                Attack(); 
             }
+        } else {
+            laserRenderer.enabled = true;
+            laserEffect.SetActive(true);
+            laserRenderer.SetPositions(new Vector3[] { firePosition.position, enemys[0].transform.position });
+            enemys[0].GetComponent<Enemy>().TakeDamage(laserDamage*Time.deltaTime);
+            laserEffect.transform.position = enemys[0].transform.position;
+            laserEffect.transform.LookAt(this.transform.position);
+
+        };
+
     }
 
       //  if (enemys[0] == null) enemys.Remove(enemys[0]);   第一个被销毁的不一定是数组第一个，（除了到达终点死意外，还可以被其他炮塔打死）
