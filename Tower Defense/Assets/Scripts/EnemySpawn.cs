@@ -8,11 +8,18 @@ public class EnemySpawn : MonoBehaviour {
     public Waves[] wave;
     public Transform START;
     public float waveRate=4;
+    private Coroutine coroutine;
+
 
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(Joker());
+        coroutine = StartCoroutine(Joker());
 	}
+
+    public void Stop()
+    {
+        StopCoroutine(coroutine);
+    }
 
     private IEnumerator Joker()
     {

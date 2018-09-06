@@ -37,8 +37,11 @@ public class Turret : MonoBehaviour {
 
     private void Update()
     {
-        laserRenderer.enabled = false;
-        laserEffect.SetActive(false);
+        if (Laser)
+        {
+            laserRenderer.enabled = false;
+            laserEffect.SetActive(false);
+        }
         timer += Time.deltaTime;
         
         if (enemys.Count > 0 && enemys[0] == null) UpdateList();
