@@ -22,13 +22,18 @@ public class BuildManager : MonoBehaviour {
     public Text moneyText;
     public int money = 1000;
     public Animator moneyAnimator;
+    public static BuildManager Instance;
 
-    void UpdateMoney(int change=0)
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void UpdateMoney(int change=0)
     {
         money += change;
         moneyText.text = "￥" + money;
     }
-
 
     private void Update()
     {

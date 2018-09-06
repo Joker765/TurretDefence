@@ -90,7 +90,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 471}
   m_MaxSize: {x: 18004, y: 14021}
   vertical: 0
-  controlID: 111
+  controlID: 11
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,7 +366,7 @@ MonoBehaviour:
     y: 92
     width: 275
     height: 710
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 49.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 192
@@ -411,7 +411,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefab
+    - Assets/Prefab/Enemy1
   m_ViewMode: 0
   m_StartGridSize: 48
   m_LastFolders: []
@@ -447,10 +447,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 274}
+    scrollPos: {x: 0, y: 198}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f20500003a270000502700005827000072270000742700008227000096270000982700009a270000f62700001c280000262800005c280000a2280000a8280000b42800004a2e00004c2e00004e2e0000502e0000
+    m_ExpandedIDs: 00000000f20500003a27000050270000582700007227000074270000822700009227000096270000982700009a270000ae270000f62700001c28000026280000282800005c280000842800008c280000a2280000a8280000b42800004a2e00004c2e00004e2e0000502e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,23 +684,23 @@ MonoBehaviour:
     height: 301
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: ac280000
     m_LastClickedID: 0
-    m_ExpandedIDs: a6fbffff00000000002a0000162b0000e82b0000
+    m_ExpandedIDs: 40edffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Money
-      m_OriginalName: Money
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10462
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 

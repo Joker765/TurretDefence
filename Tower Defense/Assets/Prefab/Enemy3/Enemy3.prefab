@@ -274,6 +274,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1745446163986386, guid: 75b0cca45e9239b4db84eedbf16d781f,
     type: 2}
   speed: 20
+  repay: 30
 --- !u!114 &114882610872412932
 MonoBehaviour:
   m_ObjectHideFlags: 1

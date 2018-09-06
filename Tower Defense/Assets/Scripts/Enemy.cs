@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour {
     public float hp=100;
     public GameObject explosionEffect;
     public float speed=10;
+    public int repay = 10;
 
     private float maxHp;
     private Slider hpSlider;
@@ -43,9 +44,11 @@ public class Enemy : MonoBehaviour {
 
     void ReachDestination()
     {
+        BuildManager.Instance.UpdateMoney(repay);
         GameManager.Instance.Failed();
         GameObject.Destroy(this.gameObject);
         EnemySpawn.frontEnemy--;
+ 
     }
 
     public void TakeDamage(float damage)
