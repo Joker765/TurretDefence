@@ -348,6 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRate: 1
+  laserDamage: 70
   laserEffect: {fileID: 1887269272778406}
   weaponPrefab: {fileID: 0}
   firePosition: {fileID: 4484173143921034}

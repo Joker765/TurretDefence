@@ -23,10 +23,10 @@ public class Turret : MonoBehaviour {
     }
 
 
+ private float timer=0.5f;
 
     public float attackRate = 0.5f;
-    private float timer=0.5f;
-    private int laserDamage = 50;
+    public int laserDamage = 50;
 
     public GameObject laserEffect;
     public GameObject weaponPrefab;
