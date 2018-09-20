@@ -10,7 +10,17 @@ public class Menu : MonoBehaviour {
         SceneManager.LoadScene(1);
     }
 
-   public void OnExitButton()
+    public void OnRankListButton()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void OnLevelButton()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void OnExitButton()
     {
 #if UNITY_EDITOR
      UnityEditor.EditorApplication.isPlaying=false;

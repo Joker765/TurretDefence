@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour {
 
     void ReachDestination()
     {
-        BuildManager.Instance.UpdateMoney(repay);
+        //BuildManager.Instance.UpdateMoney(repay);
         GameManager.Instance.Failed();
         GameObject.Destroy(this.gameObject);
         EnemySpawn.frontEnemy--;
@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour {
         Destroy(tmp, 1.5f);
         GameObject.Destroy(this.gameObject);
         EnemySpawn.frontEnemy--;
-       
+        BuildManager.Instance.UpdateMoney(repay);
     }
 
 }

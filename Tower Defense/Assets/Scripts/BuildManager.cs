@@ -23,10 +23,12 @@ public class BuildManager : MonoBehaviour {
     public int money = 1000;
     public Animator moneyAnimator;
     public static BuildManager Instance;
+  //  private Enemy enemy;
 
     private void Awake()
     {
         Instance = this;
+    //    enemy = GetComponent<Enemy>();
     }
 
     public void UpdateMoney(int change=0)
